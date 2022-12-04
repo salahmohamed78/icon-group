@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --menuHeight: 1px;
+}
+
+main {
+  margin-top: calc(var(--menuHeight) * 1);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  z-index: 1000;
+
+  box-shadow: 0 0.5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+
+  background-color: white;
+}
+
+.menuBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 25px;
+  height: 18px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.menuBtn .menuBtn__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.menuBtn--close {
+  justify-content: center;
+}
+
+.menuBtn--close > *,
+.menuBtn > * {
+  transition: all 0.3s ease;
+}
+
+.menuBtn--close .menuBtn__line:nth-child(2) {
+  opacity: 0;
+}
+.menuBtn--close .menuBtn__line:first-child {
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.menuBtn--close .menuBtn__line:last-child {
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 220px) {
+  .menuBtn {
+    width: 20px;
+    height: 15px;
+    aspect-ratio: 1;
+  }
+}
+
+.shoppingIcon {
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+  display: none;
+  width: 100%;
+  height: 80vh;
+  height: webkit-fill-avaliable;
+  transform: translateX(-150%);
+  transition: all 0.8s ease;
+  padding: 2rem;
+}
+
+.nav--open {
+  background-color: white;
+  transform: translateX(0);
+
+  /* background-color: steelblue; */
+  overflow-y: auto;
+}
+
+.nav li {
+  list-style: none;
+}
+
+.nav__btn {
+  display: block;
+  color: black;
+  text-decoration: none;
+
+  /* font-size: var(--font-size-l); */
+  margin-bottom: 1rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.campaniesBtn {
+  display: flex;
+
+  align-items: center;
+}
+
+.dropDown {
+  display: flex;
+  justify-content: space-between;
+
+  width: 10px;
+
+  padding: 1px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+/* .dropDown div {
+  display: block;
+  width: 2px;
+  aspect-ratio: 1;
+  height: 100%;
+  background-color: black;
+}
+
+.dropDown:first-child {
+  width: 20px;
+}
+
+.dropDown .n1 {
+  transform: rotate(-45deg);
+}
+
+.dropDown .n2 {
+  transform: rotate(45deg);
+} */
+
+.downBtn {
+  font-size: 20px;
+
+  margin: 0 5px;
+  transform: rotate(90deg);
+  transition: all 0.5s ease;
+}
+
+.dropUp {
+  transform: rotate(270deg);
+  transition: all 0.3s ease;
+}
+
+.companies__list {
+  display: none;
+  padding-left: clamp(1rem, 20%, 4rem);
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.campanies__list--show {
+  opacity: 1;
+  transition: all 0.8s ease;
+}
+
+.createdBy {
+  display: none;
+}
+
+/*desktop version*/
+
+@media (min-width: 800px) {
+  .menuBtn {
+    display: none;
+  }
+  .shoppingIcon {
+    display: none;
+  }
+
+  .header__top {
+    justify-content: center;
+  }
+
+  .nav {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". menu author";
+    width: 100%;
+    height: auto;
+
+    transition: all 0.8s ease;
+    padding: 0;
+    transform: translateX(0);
+    background-color: white;
+  }
+
+  .nav > ul {
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    width: 100%;
+  }
+
+  .createdBy {
+    grid-area: author;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    width: 90px;
+    padding-right: 15px;
+  }
+  .createdBy img {
+    width: 100%;
+  }
+
+  /* .dropDown {
+    width: 20px;
+  }
+
+  .dropDown div {
+    width: 2px;
+  } */
+
+  .list__dropDown {
+    position: relative;
+  }
+
+  .companies__list {
+    display: none;
+    position: absolute;
+    left: 0;
+    padding-left: 0;
+    background-color: white;
+  }
+
+  .nav__btn {
+    padding: 7px 14px;
+
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .createdBy {
+    width: 125px;
+  }
+}
+
+@media (hover: hover) {
+  .nav__btn:hover {
+    transform: scale(1.1);
+  }
+}
+
+/*
+LOGOS
+
+*/
+.header__logo {
+  width: 40%;
+  max-width: 200px;
+}
+.mep__logo,
+.wood__logo {
+  width: 15%;
+  max-width: 60px;
+}
+
+.metal__logo,
+.decor__logo {
+  width: 15%;
+  max-width: 60px;
+}
+
+.display__logo {
+  width: 15%;
+  max-width: 60px;
+}

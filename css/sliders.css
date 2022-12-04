@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*
+
+some utility classes
+
+*/
+
+/*
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+hero slider 
+
+*/
+.hero-slider {
+  width: 100%;
+}
+
+.hero-slider .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.hero-slider .swiper-slide img {
+  width: 100%;
+}
+
+/*
+
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+project slider cards 
+
+*/
+
+.boxes-slider {
+  width: 100%;
+}
+
+.boxes-slider .title--center {
+  text-align: center;
+}
+
+.boxes {
+  width: 100%;
+}
+
+.boxes-slider .box {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.boxes-slider .slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.boxes-slider .swiper-slide img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.boxes-slider .box__title {
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .boxes-slider .boxes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .boxes-slider .box {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .boxes-slider .boxes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .boxes-slider .boxes .box {
+    width: calc(100% / 3);
+  }
+}
+
+/*
+
+single slider
+
+*/
+.single-slide {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 700px) {
+  .single-slide {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .single-slide {
+    width: 55%;
+  }
+}
+
+.singleSwiper {
+  width: 100%;
+}
+
+.singleSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.singleSwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  /* height: 100%; */
+  aspect-ratio: 16/12;
+  object-fit: cover;
+}
+
+/*
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+_____________________________________________________________________________________________
+full width gallery slider
+
+*/
+
+.gallery-slider {
+  width: 100%;
+}
+
+.gallery__title {
+  text-align: center;
+}
+.gallery-slider .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+}
+
+.gallery-slider .swiper-slide img {
+  width: 100%;
+
+  object-fit: cover;
+}

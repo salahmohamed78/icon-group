@@ -1,0 +1,72 @@
+/*
+                                                                   بسم الله الرحمن الرحيم                                                               
+Created by: SALAH MOHAMED
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: "Cairo", sans-serif;
+  width: 100%;
+}
+
+/*
+
+                           header ends
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________                   
+
+                            main begins
+
+*/
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16/9;
+  border: 0;
+}
+
+.toTop {
+  text-decoration: none;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.toTop span {
+  color: black;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  font-size: 3rem;
+}

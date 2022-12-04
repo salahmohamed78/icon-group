@@ -1,0 +1,168 @@
+/*
+                                                                   بسم الله الرحمن الرحيم                                                               
+Created by: SALAH MOHAMED
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 2px solid steelblue; */
+}
+
+body {
+  position: relative;
+  font-family: "Cairo", sans-serif;
+  color: black;
+  -webkit-text-fill-color: black;
+  width: 100%;
+
+  overflow-x: hidden;
+}
+/*
+
+                       
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________                   
+
+                            main begins
+
+*/
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*
+
+                           hero ends
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________                   
+
+                            about us begins
+
+*/
+
+.about {
+  width: 100%;
+  max-width: 800px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.about__desc {
+  padding: 2rem;
+}
+
+.about__text {
+  text-align: justify;
+}
+
+/*
+
+
+
+
+                           about us ends
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________                   
+
+                            scroll to top button begins
+
+*/
+
+.toTop {
+  text-decoration: none;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.toTop span {
+  color: black;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  font-size: 3rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.project__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.project__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.project__text {
+  padding: 2rem 1rem;
+  max-width: 80ch;
+}
+
+.project__text .title {
+  margin-bottom: 0;
+}
+
+@media (min-width: 700px) {
+  .project__card:nth-child(even) .single-slide {
+    order: 1;
+  }
+
+  .project__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    gap: 2rem;
+  }
+
+  .project__text {
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .project__card {
+    gap: 5rem;
+  }
+}

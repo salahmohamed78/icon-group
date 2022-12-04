@@ -1,0 +1,252 @@
+/*
+                                                                   بسم الله الرحمن الرحيم                                                               
+Created by: SALAH MOHAMED
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: "Cairo", sans-serif;
+  overflow-x: hidden;
+}
+
+/*
+
+
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________                   
+
+                            about us begins
+
+*/
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 800px;
+  margin-inline: auto;
+  padding: 10rem 0;
+}
+
+/*
+
+about us
+
+*/
+
+.aboutUs {
+  margin-bottom: 4rem;
+  padding: 1rem 3rem;
+}
+
+.aboutUs__text {
+  font-size: var(--p_font-size);
+  line-height: var(--line-height);
+  font-weight: var(--p_font-weight);
+  text-align: justify;
+}
+
+/*
+
+                           
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________                   
+
+                            history begins
+
+*/
+
+.history {
+  display: grid;
+  justify-content: start;
+
+  padding: 1rem 3rem;
+  margin-bottom: 2rem;
+}
+
+.history__cards {
+  display: grid;
+}
+
+.history__card p {
+  transform: translateY(-5px);
+}
+
+.history__card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.history__timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 1rem;
+}
+
+.timeline__circle {
+  width: 9px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid black;
+  aspect-ratio: 1/1;
+}
+
+.timeline__line {
+  width: 1px;
+  height: 150%;
+  background-color: black;
+}
+
+.timeline__line.last {
+  opacity: 0;
+}
+
+.history__text--noBottomPadding {
+  padding-bottom: 0;
+}
+
+.text {
+  font-weight: var(--p_font-weight);
+  font-size: var(--p_font-size);
+  padding: 0 0 4rem 0;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+@media (min-width: 1000px) {
+  .timeline__circle {
+    width: 12px;
+    height: 19px;
+
+    border: 1px solid black;
+  }
+}
+
+/*
+
+                           history ends
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________                   
+
+                            mission vision begins
+
+*/
+
+.mission-vision {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 5rem 0 7rem 0;
+}
+
+.mission-vision__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem 3rem;
+  margin-bottom: 4rem;
+}
+
+/*
+
+                           mission and vision ends
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+
+______________________________________________________________________________________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________                   
+
+                            clients begins
+
+*/
+
+.clients {
+  display: grid;
+  justify-items: center;
+}
+
+.clients__logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.logo {
+  max-width: 100px;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
+/*
+
+                           clients ends
+
+
+                           about us ends
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________
+____________________________________________________________________________________                   
+
+                            scroll to top button begins
+
+*/
+
+.toTop {
+  text-decoration: none;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.toTop span {
+  color: black;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  font-size: 3rem;
+  transition: all 0.8s ease;
+}
+
+.toTop span:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.2);
+}
