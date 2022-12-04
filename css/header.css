@@ -313,3 +313,32 @@ footer
   box-shadow: 1px 0 10px rgba(0, 0, 0, 0.3);
   background-color: white;
 }
+
+/*
+
+to top
+
+*/
+
+.toTop {
+  text-decoration: none;
+
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.toTop span {
+  color: black;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  font-size: 40px;
+  transition: all 0.8s ease;
+}
+
+.toTop span:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.2);
+}
