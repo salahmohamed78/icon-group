@@ -297,3 +297,19 @@ LOGOS
   width: 15%;
   max-width: 60px;
 }
+
+/*
+
+footer
+
+*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
