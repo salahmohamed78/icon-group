@@ -118,6 +118,10 @@ let gallerySwiper = new Swiper(".gallerySwiper", {
 });
 
 let singleSlider = new Swiper(".singleSwiper", {
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   preloadImages: false,
   lazy: true,
   grabCursor: true,

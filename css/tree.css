@@ -153,8 +153,6 @@ svg {
     justify-content: center;
 
     max-width: 700px;
-    /* margin: 0 auto; */
-    /* background-color: steelblue; */
   }
 
   .tree__header {
@@ -169,9 +167,6 @@ svg {
 
   .tree__card {
     width: 100%;
-
-    /* background-color: steelblue; */
-    /* background-color: red; */
   }
 
   .tree__text {
@@ -179,7 +174,6 @@ svg {
     grid-template-columns: 1fr 1fr;
     justify-items: start;
     width: 100%;
-    /* background-color: green; */
   }
 
   .tree__text .text {
@@ -307,6 +301,11 @@ in display page
 
 .tree-wrapper.display .lineH {
   width: 90%;
+}
+
+.tree-wrapper.display .title {
+  /* background-color: steelblue; */
+  padding-inline: 20px;
 }
 
 @media (min-width: 1000px) {

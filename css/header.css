@@ -9,6 +9,10 @@
 }
 
 main {
+  min-height: 80vh;
+}
+
+main {
   margin-top: calc(var(--menuHeight) * 1);
 }
 
@@ -26,6 +30,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   width: 100%;
   padding: 1rem;
 
@@ -83,6 +88,11 @@ main {
 .shoppingIcon {
   text-decoration: none;
   color: black;
+
+  text-align: center;
+  display: grid;
+  align-items: center;
+  align-content: center;
 }
 
 .nav {
@@ -157,7 +167,7 @@ main {
 
 .downBtn {
   font-size: 20px;
-
+  font-weight: 700;
   margin: 0 5px;
   transform: rotate(90deg);
   transition: all 0.5s ease;
@@ -287,8 +297,12 @@ LOGOS
   max-width: 60px;
 }
 
-.metal__logo,
 .decor__logo {
+  width: 15%;
+  max-width: 80px;
+}
+
+.metal__logo {
   width: 15%;
   max-width: 60px;
 }
@@ -306,12 +320,37 @@ footer
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
-  padding: 20px;
+  padding: 40px 20px;
   box-shadow: 1px 0 10px rgba(0, 0, 0, 0.3);
   background-color: white;
+}
+
+.footer a:nth-child(2) {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 5px 10px;
+  order: -1;
+}
+
+@media (min-width: 500px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 40px 50px;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+  }
+
+  .footer a:nth-child(2) {
+    order: 0;
+  }
 }
 
 /*
@@ -324,7 +363,7 @@ to top
   text-decoration: none;
 
   position: fixed;
-  bottom: 60px;
+  bottom: 70px;
   right: 10px;
   cursor: pointer;
 }
