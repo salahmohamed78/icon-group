@@ -314,47 +314,6 @@ LOGOS
 
 /*
 
-footer
-
-*/
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 50px;
-  padding: 40px 20px;
-  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.3);
-  background-color: white;
-}
-
-.footer a:nth-child(2) {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  padding: 5px 10px;
-  order: -1;
-}
-
-@media (min-width: 500px) {
-  .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-    padding: 40px 50px;
-    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.3);
-    background-color: white;
-  }
-
-  .footer a:nth-child(2) {
-    order: 0;
-  }
-}
-
-/*
-
 to top
 
 */
@@ -380,4 +339,98 @@ to top
   background-color: black;
   color: white;
   transform: scale(1.2);
+}
+
+/*
+
+footer
+
+*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  margin-top: 50px;
+  padding: 40px 0;
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+.fb--desktop,
+.insta--desktop {
+  display: none;
+}
+
+.footer__contactBtn {
+  padding: 5px 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+svg {
+  width: 30px;
+  aspect-ratio: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.footer img {
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding-inline: clamp(10px, calc(2vw + 1px), 40px);
+    padding-block: 40px;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+  }
+
+  .fb--desktop,
+  .insta--desktop {
+    display: block;
+  }
+
+  .fb--mobile,
+  .insta--mobile {
+    display: none;
+  }
+
+  .footer__btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+    gap: 20px;
+  }
+
+  svg {
+    display: block;
+    width: 30px;
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer img {
+    display: block;
+    width: 40px;
+
+    margin: 0;
+    padding: 0;
+  }
 }
