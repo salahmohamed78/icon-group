@@ -63,3 +63,17 @@ setMenuHeight();
 
 window.addEventListener("DOMContentLoaded", setMenuHeight);
 window.addEventListener("resize", setMenuHeight);
+
+let main = document.querySelector("main");
+
+main.addEventListener("click", function () {
+  if (isDown) {
+    dropDownBtn.classList.toggle("dropUp");
+    companiesList.classList.toggle("campanies__list--show");
+
+    setTimeout(function () {
+      companiesList.style.display = "none";
+    }, 800);
+    isDown = false;
+  }
+});
