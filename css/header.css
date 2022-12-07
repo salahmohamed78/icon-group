@@ -366,10 +366,17 @@ footer
   display: none;
 }
 
+
+.footer__btns {
+  order: -5;
+}
+
 .footer__contactBtn {
   padding: 5px 20px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
+  
+  
 }
 
 svg {
@@ -409,13 +416,18 @@ svg {
   }
 
   .footer__btns {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    /* grid-template-columns: 1fr; */
+    justify-content: center;
+    align-items: center;
     align-items: center;
     justify-items: center;
-
+    
     gap: 20px;
+    order: 0;
+    /* background-color: steelblue; */
   }
+
 
   svg {
     display: block;

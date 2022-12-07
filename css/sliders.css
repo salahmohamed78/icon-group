@@ -45,6 +45,9 @@ project slider cards
 
 .boxes-slider {
   width: 100%;
+
+  margin-bottom: 92px;
+  
 }
 
 .boxes-slider .title--center {
@@ -58,6 +61,7 @@ project slider cards
 .boxes-slider .box {
   width: 100%;
   margin-bottom: 2rem;
+  
 }
 
 .boxes-slider .slider {

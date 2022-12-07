@@ -141,6 +141,7 @@ let pageTitle = document.title;
 switch (pageTitle) {
   case "ICON GROUP":
     footerObject = iconGroup;
+
     break;
 
   case "DISPLAY ICON":
@@ -198,7 +199,15 @@ function generateFooterContent(footerObject) {
   return text;
 }
 
+
+
+
+
 let footerContent = generateFooterContent(footerObject);
+
+
+
+
 
 //
 const body = document.querySelector("body");
@@ -211,3 +220,6 @@ body.appendChild(footer);
 if (footerObject.instagram === false) {
   footer.querySelector(".fb--desktop").style.order = "-1";
 }
+
+
+
