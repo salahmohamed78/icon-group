@@ -14,7 +14,7 @@ some utility classes
 
 /*
 _____________________________________________________________________________________________
-_____________________________________________________________________________________________
+____________________________________________________________________________________________
 _____________________________________________________________________________________________
 _____________________________________________________________________________________________
 hero slider 
@@ -47,7 +47,6 @@ project slider cards
   width: 100%;
 
   margin-bottom: 92px;
-  
 }
 
 .boxes-slider .title--center {
@@ -61,7 +60,6 @@ project slider cards
 .boxes-slider .box {
   width: 100%;
   margin-bottom: 2rem;
-  
 }
 
 .boxes-slider .slider {
@@ -72,6 +70,7 @@ project slider cards
 .boxes-slider .swiper-slide img {
   width: 100%;
   aspect-ratio: 16/9;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -136,6 +135,7 @@ single slider
   width: 100%;
   /* height: 100%; */
   aspect-ratio: 16/12;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -169,6 +169,8 @@ full width gallery slider
 
 .gallery-slider .swiper-slide img {
   width: 100%;
+
+  -o-object-fit: cover;
 
   object-fit: cover;
 }

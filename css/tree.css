@@ -30,6 +30,8 @@ body {
 }
 .tree__header {
   width: 20%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
   min-width: fit-content;
 
   display: flex;
@@ -47,6 +49,7 @@ body {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr 1fr 3fr;
+  -moz-column-gap: 5px;
   column-gap: 5px;
   justify-items: center;
   justify-content: space-between;
@@ -88,6 +91,7 @@ body {
 .card__social {
   display: grid;
   grid-auto-flow: column;
+  -moz-column-gap: 2rem;
   column-gap: 2rem;
 }
 
@@ -145,6 +149,8 @@ svg {
   }
   .tree__header {
     width: 20%;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
     min-width: fit-content;
     overflow: visible;
   }
@@ -161,6 +167,8 @@ svg {
 
   .tree__header {
     width: 200px;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
     min-width: fit-content;
     overflow: visible;
   }
@@ -195,6 +203,8 @@ for icon group
 .text--btn {
   margin-bottom: 0;
   padding: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -295,6 +305,8 @@ in display page
 */
 
 .tree-wrapper.display .tree {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 
