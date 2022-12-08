@@ -11,6 +11,10 @@
   scroll-padding-top: calc(var(--menuHeight) * 1.5);
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 .tree-wrapper {
   display: flex;
   justify-content: center;
@@ -306,6 +310,22 @@ in display page
 .tree-wrapper.display .title {
   /* background-color: steelblue; */
   padding-inline: 20px;
+}
+
+.tree-wrapper.display .text,
+.tree-desktop.display .text {
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease;
+}
+
+@media (hover: hover) {
+  .tree-wrapper.display .text:hover,
+  .tree-desktop.display .text:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+  }
 }
 
 @media (min-width: 1000px) {
