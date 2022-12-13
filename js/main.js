@@ -137,3 +137,10 @@ let singleSlider = new Swiper(".singleSwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+let profileLogo = document.querySelector(".profile__logo");
+let ProfileLogoWidth = profileLogo.offsetWidth;
+let profileLogoHeight = ProfileLogoWidth * 0.5625;
+document
+  .querySelector(":root")
+  .style.setProperty("--logo-height", `${profileLogoHeight}px`);
