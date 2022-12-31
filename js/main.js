@@ -138,9 +138,13 @@ let singleSlider = new Swiper(".singleSwiper", {
   },
 });
 
-let profileLogo = document.querySelector(".profile__logo");
-let ProfileLogoWidth = profileLogo.offsetWidth;
-let profileLogoHeight = ProfileLogoWidth * 0.5625;
-document
+let profileLogo = document.querySelectorAll(".profile__logo");
+if(profileLogo[0]){
+
+  let ProfileLogoWidth = profileLogo[0].offsetWidth;
+  
+  let profileLogoHeight = ProfileLogoWidth * 0.5625;
+  document
   .querySelector(":root")
   .style.setProperty("--logo-height", `${profileLogoHeight}px`);
+}

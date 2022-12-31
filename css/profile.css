@@ -37,13 +37,14 @@ a {
   aspect-ratio: 16/9;
   -o-object-fit: contain;
   object-fit: contain;
+    
 }
 
-@media not (aspect-ratio) {
+ @media not (aspect-ratio) {
   .profile__logo {
     height: var(--logo-height);
   }
-}
+} 
 
 .profile__btn {
   padding: 5px 30px;

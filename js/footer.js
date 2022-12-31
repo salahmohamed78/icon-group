@@ -172,7 +172,7 @@ function generateFooterContent(footerObject) {
   text += `<div class="footer__btns">`;
   //
   if (footerObject.instagram) {
-    text += `<a href = "${footerObject.instagram}" target="_blank" class="insta--desktop"  >${insta}</a> `;
+    text += `<a href = "${footerObject.instagram}" target="_blank" class="insta--desktop" aria-label="Instagram" >${insta}</a> `;
   }
   //
   text += `<a href="/contact/index.html" target="_blank"
@@ -180,7 +180,7 @@ function generateFooterContent(footerObject) {
   >Contact</a>`;
   //
   if (footerObject.fb) {
-    text += `<a href = "${footerObject.fb}" target="_blank" class="fb--desktop" >${facebookSvg}</a> `;
+    text += `<a href = "${footerObject.fb}" target="_blank" class="fb--desktop" aria-label="Facebook">${facebookSvg}</a> `;
   }
   //
   text += ` </div>`;
@@ -188,11 +188,11 @@ function generateFooterContent(footerObject) {
   text += `<a href="mailto:info@displayicon.com">${footerObject.email}</a>`;
   //
   if (footerObject.fb) {
-    text += `<a href = "${footerObject.fb}" target="_blank" class="fb--mobile"> ${facebookSvg}</a> `;
+    text += `<a href = "${footerObject.fb}" target="_blank" class="fb--mobile" aria-label="Facebook"> ${facebookSvg}</a> `;
   }
   //
   if (footerObject.instagram != false) {
-    text += `<a href = "${footerObject.instagram}" target="_blank" class="insta--mobile"  ><img src="/media/icons/insta.png"/></a> `;
+    text += `<a href = "${footerObject.instagram}" target="_blank" class="insta--mobile" aria-label="Instagram" ><img src="/media/icons/insta.png"/></a> `;
   }
   //
   text += `</div>`;
@@ -217,9 +217,9 @@ footer.innerHTML = footerContent;
 
 body.appendChild(footer);
 
-if (footerObject.instagram === false) {
-  footer.querySelector(".fb--desktop").style.order = "-1";
-}
+// if (footerObject.instagram === false) {
+//   footer.querySelector(".fb--desktop").style.order = "-1";
+// }
 
 
 
