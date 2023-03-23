@@ -51,6 +51,7 @@ main.addEventListener("click", function () {
     (isDown = !1));
 });
 
+// redirecting the store btn
 let menuBtns = document.querySelectorAll(".nav__btn");
 let storeBtn = null;
 for (let i = 0; i < menuBtns.length; i++) {
@@ -60,5 +61,11 @@ for (let i = 0; i < menuBtns.length; i++) {
   }
 }
 
-console.log(storeBtn);
 storeBtn.setAttribute("href", "https://furnitureiconstore.com");
+
+// redirecting the store icon in mobile
+
+let shoopingCartIcon = document.querySelector(".shoppingIcon");
+let shoopingCardLinkTag = shoopingCartIcon.parentNode;
+shoopingCardLinkTag.setAttribute("href", "https://furnitureiconstore.com");
+console.log(shoopingCardLinkTag);
