@@ -1,1 +1,11 @@
+@font-face {
+    font-family : cairo;
+    src: url("./fonts/Cairo-Medium.ttf");
+    font-display: swap;
+    
+}
+
+body {
+    font-family : cairo, arial, sans-serif;
+}
 :root{font-size:clamp(16px, calc(1vw + 1.5px), 21px);line-height:1.5;--fs-base5:3.052rem;--fs-base4:2.441rem;--fs-base3:1.953rem;--fs-base2:1.563rem;--fs-base1:1.25rem;--fs-base:1rem;--fs-base-1:0.8rem;--fs-base-2:0.64rem;--fs-base-3:0.512rem;font-weight:400;--fw-base3:700;--fw-base2:600;--fw-base1:500;--fw-base:400;--fw-base-1:300;--fw-base-2:200}.title{margin-bottom:2rem;font-size:var(--fs-base1);font-weight:var(--fw-base3)}a{text-decoration:none;color:#000}

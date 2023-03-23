@@ -4,7 +4,6 @@ Created by: SALAH MOHAMED
 
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
 
 * {
   padding: 0;
@@ -18,8 +17,8 @@ Created by: SALAH MOHAMED
 
 body {
   position: relative;
-  font-family: "Cairo", sans-serif;
-  width: 100%;
+ 
+ 
 }
 
 /*

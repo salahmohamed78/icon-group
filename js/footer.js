@@ -1,8 +1,4 @@
-//يسم الله
-//
-//
-
-let facebookSvg = `
+let facebookSvg=`
 <svg
                     version="1.1"
                     id="Layer_1"
@@ -39,10 +35,7 @@ let facebookSvg = `
                     <g></g>
                     <g></g></svg
                 >
-`;
-
-//
-let insta = `
+`,insta=`
 
    <svg
                     width="3364.7px"
@@ -89,137 +82,7 @@ let insta = `
                       fill="#fff"
                     />
                   </svg>
-`;
-//
-
-let iconGroup = {
-  number: "+2-010-3200-2004",
-  email: "info@displayicon.com",
-  fb: false,
-  instagram: false,
-};
-
-let display = {
-  number: "+2-010-3200-2004",
-  email: "info@displayicon.com",
-  fb: "https://www.facebook.com/DisplayIcon",
-  instagram: "https://www.instagram.com/displayicon",
-};
-
-let decor = {
-  number: "+2-010-3200-2004",
-  email: "info@displayicon.com",
-  fb: "https://www.facebook.com/Decoriconstudio",
-  instagram: "https://www.instagram.com/decoriconstudio/",
-};
-
-let metal = {
-  number: "+2-010-1021-0258",
-  email: "info@displayicon.com",
-  fb: "https://www.facebook.com/MetalIconEG",
-  instagram: false,
-};
-
-let wood = {
-  number: "+2-011-0000-9305",
-  email: "info@displayicon.com",
-  fb: "https://www.facebook.com/Woodicon.egy/",
-  instagram: false,
-};
-
-let mep = {
-  number: "+2-011-1116-8078",
-  email: "info@displayicon.com",
-  fb: "https://www.facebook.com/MEPicon",
-  instagram: false,
-};
-
-let footerObject;
-
-let pageTitle = document.title;
-
-switch (pageTitle) {
-  case "ICON GROUP":
-    footerObject = iconGroup;
-
-    break;
-
-  case "DISPLAY ICON":
-    footerObject = display;
-    break;
-  case "DECOR ICON":
-    footerObject = decor;
-    break;
-  case "METAL ICON":
-    footerObject = metal;
-    break;
-  case "WOOD ICON":
-    footerObject = wood;
-    break;
-  case "MEP ICON":
-    footerObject = mep;
-    break;
-}
-
-//
-//
-
-function generateFooterContent(footerObject) {
-  text = `  <div class="footer">
-            <a href="tel:00201032002004">${footerObject.number}</a>`;
-  //
-
-  text += `<div class="footer__btns">`;
-  //
-  if (footerObject.instagram) {
-    text += `<a href = "${footerObject.instagram}" target="_blank" class="insta--desktop" aria-label="Instagram" >${insta}</a> `;
-  }
-  //
-  text += `<a href="/contact/index.html" target="_blank"
+`,iconGroup={number:"+2-010-3200-2004",email:"info@displayicon.com",fb:!1,instagram:!1},display={number:"+2-010-3200-2004",email:"info@displayicon.com",fb:"https://www.facebook.com/DisplayIcon",instagram:"https://www.instagram.com/displayicon"},decor={number:"+2-010-3200-2004",email:"info@displayicon.com",fb:"https://www.facebook.com/Decoriconstudio",instagram:"https://www.instagram.com/decoriconstudio/"},metal={number:"+2-010-1021-0258",email:"info@displayicon.com",fb:"https://www.facebook.com/MetalIconEG",instagram:!1},wood={number:"+2-011-0000-9305",email:"info@displayicon.com",fb:"https://www.facebook.com/Woodicon.egy/",instagram:!1},mep={number:"+2-011-1116-8078",email:"info@displayicon.com",fb:"https://www.facebook.com/MEPicon",instagram:!1},footerObject,pageTitle=document.title;switch(pageTitle){case"ICON GROUP":footerObject=iconGroup;break;case"DISPLAY ICON":footerObject=display;break;case"DECOR ICON":footerObject=decor;break;case"METAL ICON":footerObject=metal;break;case"WOOD ICON":footerObject=wood;break;case"MEP ICON":footerObject=mep}function generateFooterContent(_){return text=`  <div class="footer">
+            <a href="tel:00201032002004">${_.number}</a>`,text+='<div class="footer__btns">',_.instagram&&(text+=`<a href = "${_.instagram}" target="_blank" class="insta--desktop" aria-label="Instagram" >${insta}</a> `),text+=`<a href="/contact/index.html" target="_blank"
   class ="footer__contactBtn"
-  >Contact</a>`;
-  //
-  if (footerObject.fb) {
-    text += `<a href = "${footerObject.fb}" target="_blank" class="fb--desktop" aria-label="Facebook">${facebookSvg}</a> `;
-  }
-  //
-  text += ` </div>`;
-  //
-  text += `<a href="mailto:info@displayicon.com">${footerObject.email}</a>`;
-  //
-  if (footerObject.fb) {
-    text += `<a href = "${footerObject.fb}" target="_blank" class="fb--mobile" aria-label="Facebook"> ${facebookSvg}</a> `;
-  }
-  //
-  if (footerObject.instagram != false) {
-    text += `<a href = "${footerObject.instagram}" target="_blank" class="insta--mobile" aria-label="Instagram" ><img src="/media/icons/insta.png"/></a> `;
-  }
-  //
-  text += `</div>`;
-  return text;
-}
-
-
-
-
-
-let footerContent = generateFooterContent(footerObject);
-
-
-
-
-
-//
-const body = document.querySelector("body");
-let footer = document.createElement("footer");
-
-footer.innerHTML = footerContent;
-
-body.appendChild(footer);
-
-// if (footerObject.instagram === false) {
-//   footer.querySelector(".fb--desktop").style.order = "-1";
-// }
-
-
-
+  >Contact</a>`,_.fb&&(text+=`<a href = "${_.fb}" target="_blank" class="fb--desktop" aria-label="Facebook">${facebookSvg}</a> `),text+=" </div>",text+=`<a href="mailto:info@displayicon.com">${_.email}</a>`,_.fb&&(text+=`<a href = "${_.fb}" target="_blank" class="fb--mobile" aria-label="Facebook"> ${facebookSvg}</a> `),!1!=_.instagram&&(text+=`<a href = "${_.instagram}" target="_blank" class="insta--mobile" aria-label="Instagram" ><img src="/media/icons/insta.png"/></a> `),text+="</div>"}let footerContent=generateFooterContent(footerObject);const body=document.querySelector("body");let footer=document.createElement("footer");footer.innerHTML=footerContent,body.appendChild(footer);
